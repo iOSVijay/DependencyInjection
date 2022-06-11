@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		044AB92E2854F848004DF75B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044AB92D2854F848004DF75B /* AppDelegate.swift */; };
-		044AB9302854F848004DF75B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044AB92F2854F848004DF75B /* ViewController.swift */; };
+		044AB9302854F848004DF75B /* CheckoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044AB92F2854F848004DF75B /* CheckoutVC.swift */; };
 		044AB9332854F848004DF75B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 044AB9312854F848004DF75B /* Main.storyboard */; };
 		044AB9352854F84A004DF75B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 044AB9342854F84A004DF75B /* Assets.xcassets */; };
 		044AB9382854F84A004DF75B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 044AB9362854F84A004DF75B /* LaunchScreen.storyboard */; };
@@ -36,7 +36,7 @@
 /* Begin PBXFileReference section */
 		044AB92A2854F848004DF75B /* DependencyInjection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DependencyInjection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		044AB92D2854F848004DF75B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		044AB92F2854F848004DF75B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		044AB92F2854F848004DF75B /* CheckoutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutVC.swift; sourceTree = "<group>"; };
 		044AB9322854F848004DF75B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		044AB9342854F84A004DF75B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		044AB9372854F84A004DF75B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -98,7 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				044AB92D2854F848004DF75B /* AppDelegate.swift */,
-				044AB92F2854F848004DF75B /* ViewController.swift */,
+				044AB95B2854F87E004DF75B /* Checkout */,
 				044AB9312854F848004DF75B /* Main.storyboard */,
 				044AB9342854F84A004DF75B /* Assets.xcassets */,
 				044AB9362854F84A004DF75B /* LaunchScreen.storyboard */,
@@ -123,6 +123,38 @@
 				044AB94F2854F84A004DF75B /* Info.plist */,
 			);
 			path = DependencyInjectionUITests;
+			sourceTree = "<group>";
+		};
+		044AB95B2854F87E004DF75B /* Checkout */ = {
+			isa = PBXGroup;
+			children = (
+				044AB95E2854F8A7004DF75B /* model */,
+				044AB95D2854F89C004DF75B /* viewModel */,
+				044AB95C2854F88E004DF75B /* view */,
+			);
+			path = Checkout;
+			sourceTree = "<group>";
+		};
+		044AB95C2854F88E004DF75B /* view */ = {
+			isa = PBXGroup;
+			children = (
+				044AB92F2854F848004DF75B /* CheckoutVC.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		044AB95D2854F89C004DF75B /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = viewModel;
+			sourceTree = "<group>";
+		};
+		044AB95E2854F8A7004DF75B /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +288,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				044AB9302854F848004DF75B /* ViewController.swift in Sources */,
+				044AB9302854F848004DF75B /* CheckoutVC.swift in Sources */,
 				044AB92E2854F848004DF75B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -442,7 +474,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.vj.DependencyInjection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -460,7 +492,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.vj.DependencyInjection;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
